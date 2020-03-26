@@ -3,6 +3,12 @@
     <xh-button>
       默认按钮
     </xh-button>
+    <!-- 带类型的按钮 -->
+    <xh-button type='primary'>主要按钮</xh-button>
+    <xh-button type='warning'>警告按钮</xh-button>
+    <xh-button type='danger'>危险按钮</xh-button>
+    <xh-button type='success'>成功按钮</xh-button>
+    <xh-button type='info'>信息按钮</xh-button>
     <xh-icon></xh-icon>
   </div>
 </template>
@@ -17,12 +23,12 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+// #app {
+//   font-family: Avenir, Helvetica, Arial, sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+//   text-align: center;
+//   color: #2c3e50;
+//   margin-top: 60px;
+// }
 </style>
