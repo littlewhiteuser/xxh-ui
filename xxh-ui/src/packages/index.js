@@ -12,8 +12,8 @@ const install = (Vue) => {
 // 有可能组件会通过script标签的方式引入
 // <script src="/xh-ui"></script>
 // 不会触发install，让它自动触发install
-if (typeof window.Vue !== 'undefined') {
-    install(Vue)
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue)
 }
 export default {
     install

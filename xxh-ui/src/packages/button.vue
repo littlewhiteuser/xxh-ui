@@ -3,6 +3,10 @@
     class="xh-button"
     :class="btnClass"
   >
+    <xh-icon
+      :icon="icon"
+      class="icon"
+    ></xh-icon>
     <span v-if="this.$slots.default">
       <slot></slot>
     </span>
@@ -22,6 +26,14 @@ export default {
         }
         return true
       }
+    },
+    icon: {
+      type: String,
+      default: ''
+    },
+    iconPosition: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -29,6 +41,9 @@ export default {
       let classes = []
       if (this.type) {
         classes.push(`xh-button-${this.type}`)
+      }
+      if (this.iconPosition) {
+        classes.push(`xh-button-${this.iconPosition}`)
       }
       return classes
     }
@@ -81,6 +96,7 @@ $active-color: #3a8ee6;
       background-color: #{$color};
       border: 1px solid #{$color};
       color: #fff;
+      fill: #fff;
     }
   }
   @each $type,
@@ -114,6 +130,33 @@ $active-color: #3a8ee6;
       background-color: #{$color};
       border: 1px solid #{$color};
       color: #fff;
+    }
+  }
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+  .icon + span {
+    margin-left: 4px;
+  }
+  &-left {
+    svg {
+      order: 1;
+    }
+    span {
+      order: 2;
+    }
+  }
+  &-right {
+    svg {
+      order: 2;
+    }
+    span {
+      order: 1;
+    }
+    .icon + span {
+      margin-left: 0;
+      margin-right: 4px;
     }
   }
 }
