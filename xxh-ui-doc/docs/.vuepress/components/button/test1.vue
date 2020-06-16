@@ -24,10 +24,10 @@
 </template>
 
 <script>
-import xhButton from '../../../../../xxh-ui/src/packages/button'
+// import xhButton from '../../../../../xxh-ui/src/packages/button'
 export default {
   comments: {
-    xhButton
+    // xhButton
   }
 }
 </script>

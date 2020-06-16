@@ -8,7 +8,7 @@
     "test:unit": "vue-cli-service test:unit",
     "lib": "vue-cli-service build --target lib --name xxh-ui  ./src/packages/index.js"
   },
-  "main": "./dist/xxh-ui.umd.min.js",
+  "main": "./src/packages/index",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11"

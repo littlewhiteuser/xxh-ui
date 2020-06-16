@@ -3,10 +3,12 @@
 
 import Button from './button.vue'
 import Icon from './icon.vue'
+import ChooseDrawer from './ChooseDrawer.vue'
 
 const install = (Vue) => {
     Vue.component(Button.name, Button)
     Vue.component(Icon.name, Icon)
+    Vue.component(ChooseDrawer.name, ChooseDrawer)
 }
 
 // 有可能组件会通过script标签的方式引入

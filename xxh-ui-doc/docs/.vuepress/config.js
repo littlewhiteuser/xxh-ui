@@ -14,7 +14,8 @@ module.exports = {
             '/components/': [{
                 collapsable: true,
                 children: [
-                    'button'
+                    'button',
+                    'chooseDrawer'
                 ]
             }
             ]

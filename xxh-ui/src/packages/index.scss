@@ -1,0 +1,119 @@
+.right-drawer /deep/ {
+  //padding: 10px 12px;
+  font-size: 12px;
+  color: #333;
+  .middle-line {
+    height: 10px;
+  }
+  .el-table__body {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .el-right-drawer {
+    color: #333;
+    .el-drawer,
+    .el-drawer__close-btn {
+      outline: none;
+    }
+    .el-table__body {
+      border-bottom: none;
+    }
+    .el-drawer__header {
+      margin: 0;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e6e6e6;
+      color: #333;
+      font-size: 14px;
+      font-weight: bold;
+      & > :first-child {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+    .el-drawer__body {
+      padding: 0 15px;
+      position: relative;
+      .el-table__body-wrapper {
+        max-height: calc(100vh - 240px);
+        overflow: auto;
+      }
+    }
+    .el-table {
+      border-bottom: none;
+      .link-style {
+        color: #105ecc;
+        cursor: pointer;
+      }
+    }
+  }
+  .drawer-footer {
+    height: 50px;
+    background: #f2f3f5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -15px;
+    z-index: 1;
+    .btn {
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+      margin-right: 10px;
+      font-size: 12px;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+    .submit-btn {
+      color: #fff;
+      background: #21b065;
+      border: 1px solid #21b065;
+    }
+    .cancel_btn {
+      color: #333;
+      background: #fff;
+      border: 1px solid #ddd;
+    }
+  }
+  .table-filter-sales {
+    background: none;
+    border: none;
+    padding: 15px 0 0 0;
+    z-index: 55;
+    .el-form {
+      position: relative;
+      padding-right: 110px;
+    }
+    .el-input {
+      width: 140px;
+    }
+    .el-form-item {
+      margin-bottom: 0;
+      padding-bottom: 15px;
+    }
+    .el-form-item__content {
+      line-height: 26px;
+      // width: 134px;
+    }
+    .el-form-item__label {
+      margin-right: 5px;
+      line-height: 26px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .search-button {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  .pagination_box {
+    text-align: right;
+  }
+  .notNeedSearch {
+    margin-top: 15px;
+  }
+}
